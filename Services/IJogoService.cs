@@ -3,7 +3,7 @@ using ApiCatalogoJogos.ViewModel;
 
 namespace ApiCatalogoJogos.Services
 {
-    public interface IJogoServices
+    public interface IJogoService : IDisposable
     {
         Task<List<JogoViewModel>> Obter(int pagina, int quantidade);
         Task<JogoViewModel> Obter(Guid id);
